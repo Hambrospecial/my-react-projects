@@ -1,0 +1,25 @@
+.scoreContainer {
+  padding: 10px 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.scoreItem {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.scoreLabel {
+  font-weight: bold;
+  color: #333;
+}
+
+.scoreValue {
+  color: #007bff;
+}

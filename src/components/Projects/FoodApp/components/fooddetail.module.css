@@ -1,0 +1,145 @@
+.foodDetail {
+  max-width: 800px;
+  margin: 2.5rem auto;
+  font-family: Arial, sans-serif;
+}
+
+.foodHeader {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.foodImage {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.foodTags {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.vegan {
+  background-color: #4caf50;
+}
+.nonVegan {
+  background-color: #f44336;
+}
+.vegetarian {
+  background-color: #2196f3;
+}
+.nonVegetarian {
+  background-color: #ff9800;
+}
+
+.instructions,
+.ingredients,
+.summaryCard {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.step {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.stepNumber {
+  font-weight: bold;
+  color: #2196f3;
+}
+
+.ingredients ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  list-style-type: none;
+  padding: 0;
+}
+
+.ingredient {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.ingredientImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.ingredientDetails {
+  flex-grow: 1;
+}
+
+.amount {
+  font-weight: bold;
+  color: #333;
+}
+
+.unit {
+  color: #666;
+  margin-left: 0.25rem;
+}
+
+.name {
+  display: block;
+  margin-top: 0.5rem;
+  color: #333;
+}
+
+.summaryCard h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.summaryText {
+  color: #555;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.summaryText b {
+  color: #333;
+  font-weight: 600;
+}
+
+.summaryText a {
+  color: #2196f3;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.summaryText a:hover {
+  color: #1565c0;
+  text-decoration: underline;
+}
