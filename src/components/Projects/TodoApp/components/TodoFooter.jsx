@@ -1,5 +1,8 @@
+import { useContext } from "react";
 import styles from "../styles/todofooter.module.css";
-export default function TodoFooter({ setTodos }) {
+import TodoContext from "../context/TodoContext";
+export default function TodoFooter() {
+  const { setTodos } = useContext(TodoContext);
   function handleClearTasks() {
     setTodos([]);
   }

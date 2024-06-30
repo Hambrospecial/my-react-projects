@@ -1,7 +1,10 @@
 import { useState } from "react";
 import styles from "../styles/todoinput.module.css";
+import { useContext } from "react";
+import TodoContext from "../context/TodoContext";
 
-export default function TodoInput({ todo, setTodo, todos, setTodos }) {
+export default function TodoInput() {
+  const { todo, setTodo, todos, setTodos } = useContext(TodoContext);
   const tasks = todos.map((item) => item.name);
   const [error, setError] = useState("");
 

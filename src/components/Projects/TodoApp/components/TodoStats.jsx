@@ -1,6 +1,9 @@
+import { useContext } from "react";
 import styles from "../styles/todostats.module.css";
+import TodoContext from "../context/TodoContext";
 
-export default function TodoStats({ todos }) {
+export default function TodoStats() {
+  const { todos } = useContext(TodoContext);
   const completedTasks = todos.filter((todo) => todo.done);
   return (
     <div className={styles.stats}>

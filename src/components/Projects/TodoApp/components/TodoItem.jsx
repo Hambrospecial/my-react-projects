@@ -1,5 +1,8 @@
+import { useContext } from "react";
 import styles from "../styles/todoitem.module.css";
-export default function TodoItem({ todo, todos, setTodos }) {
+import TodoContext from "../context/TodoContext";
+export default function TodoItem({ todo }) {
+  const { todos, setTodos } = useContext(TodoContext);
   function handleDelete(item) {
     setTodos(todos.filter((todo) => todo.name !== item));
   }
