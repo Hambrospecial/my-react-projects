@@ -3,11 +3,15 @@ import FoodDetail from "./FoodDetail";
 import Loading from "./Loading";
 import ErrorPage from "./ErrorPage";
 import EmptyPage from "./EmptyPage";
+import { useContext } from "react";
+import FoodSearchContext from "../context/FoodSearchContext";
 
-export default function Recipe({ foodId }) {
+export default function Recipe() {
   const [isLoading, setIsLoading] = useState(true);
   const [recipe, setRecipe] = useState(null);
   const [error, setError] = useState(null);
+
+  const { foodId } = useContext(FoodSearchContext);
 
   useEffect(() => {
     async function getRecipe() {

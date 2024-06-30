@@ -3,27 +3,37 @@ import "./header.css";
 export default function Header() {
   return (
     <header>
-      <nav>
-        <div className="logo">
-          <a href="#">Portfolio</a>
-        </div>
-        <div className="nav-links">
+      <div className="navbar">
+        <div className="logo">Portfolio</div>
+        <nav>
           <ul>
-            <NavLink to={"/home"}>
+            <NavLink
+              to={"/home"}
+              className={({ isActive }) => (isActive ? "active-link" : "")}
+            >
               <li>Home</li>
             </NavLink>
-            <NavLink to={"/projects"}>
+            <NavLink
+              to={"/projects"}
+              className={({ isActive }) => (isActive ? "active-link" : "")}
+            >
               <li>Projects</li>
             </NavLink>
-            <NavLink to={"/about"}>
+            <NavLink
+              to={"/about"}
+              className={({ isActive }) => (isActive ? "active-link" : "")}
+            >
               <li>About</li>
             </NavLink>
-            <NavLink to={"/contact"}>
+            <NavLink
+              to={"/contact"}
+              className={({ isActive }) => (isActive ? "active-link" : "")}
+            >
               <li>Contact</li>
             </NavLink>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
   );
 }

@@ -23,7 +23,7 @@ function CurrencyConverter() {
   const currencyOptions = Object.keys(currencyInfo);
   const convert = () => {
     if (fromCurrency === toCurrency) setConvertedAmount(amount);
-    else setConvertedAmount(amount * currencyInfo[toCurrency]);
+    else setConvertedAmount((amount * currencyInfo[toCurrency]).toFixed(2));
   };
 
   return (

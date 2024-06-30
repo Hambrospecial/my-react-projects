@@ -16,10 +16,18 @@ export default function Home() {
       <div className="about-section">
         <h2>About Me</h2>
         <p>
-          I am a passionate React developer with a focus on building modern,
-          responsive, and user-friendly web applications. With a keen eye for
-          design and a strong understanding of React principles, I strive to
-          create engaging and efficient user experiences.
+          I am an accomplished Software Engineer with over 4 years of experience
+          in the fintech and financial services sectors. Proficient in Java,
+          Spring Boot, microservices, SQL, and Agile methodologies, I specialize
+          in designing, developing, and deploying innovative solutions that
+          drive business success. My key achievements include developing
+          SmartTrade, a trade automation solution used by major banks, achieving
+          a 40% efficiency improvement, and reducing customer complaints by 25%
+          through effective ESB integration. As a passionate React developer, I
+          focus on building modern, responsive, and user-friendly web
+          applications, combining a keen eye for design with a strong
+          understanding of React principles to create engaging and efficient
+          user experiences.
         </p>
         <NavLink to={"/about"} className="btn">
           Learn More

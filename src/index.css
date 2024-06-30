@@ -10,3 +10,25 @@ body {
   font-family: Arial, sans-serif;
   height: 100%;
 }
+
+.active-link {
+  color: #ffffff;
+  background: linear-gradient(90deg, #007bff 0%, #0056b3 100%);
+  text-decoration: none;
+  border: none;
+  padding: 5px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.active-link:hover {
+  background: linear-gradient(90deg, #0056b3 0%, #003f7f 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.active-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}

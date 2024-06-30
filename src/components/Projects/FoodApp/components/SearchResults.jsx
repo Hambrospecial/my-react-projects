@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 import Loading from "./Loading";
 import ErrorPage from "./ErrorPage";
+import { useContext } from "react";
+import FoodSearchContext from "../context/FoodSearchContext";
 
-export default function SearchResults({ query, setFoodResults }) {
+export default function SearchResults({ query }) {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
+  const { setFoodResults } = useContext(FoodSearchContext);
   useEffect(() => {
     async function searchFoods() {
       try {

@@ -6,24 +6,24 @@ import Recipe from "./components/Recipe";
 import Container from "./components/Container";
 import InnerContainer from "./components/InnerContainer";
 import Search from "./components/Search";
+import FoodSearchProvider from "./context/FoodSearchProvider";
 
 function FoodApp() {
-  const [foodResults, setFoodResults] = useState([]);
   const [foodId, setFoodId] = useState(null);
 
   return (
-    <div className="App">
+    <FoodSearchProvider className="App">
       <Nav />
-      <Search setFoodResults={setFoodResults} />
+      <Search />
       <Container>
         <InnerContainer>
-          <FoodList setFoodId={setFoodId} foodResults={foodResults} />
+          <FoodList />
         </InnerContainer>
         <InnerContainer>
-          <Recipe foodId={foodId} />
+          <Recipe />
         </InnerContainer>
       </Container>
-    </div>
+    </FoodSearchProvider>
   );
 }
 
